@@ -1,12 +1,9 @@
-T1 = 20
-T2 = 120
-lo = 200
-alpha = 1,6
+T1 = 20;
+T2 = 120;
+lo = 200;
+alpha = 1.6;
 
+x = [T1+273.15:10:T2+273.15];
+y = calculdL(T1,x,lo,alpha);
 
-calcul dL 
-
-X = [t1:0.1:t2]
-y = L 
-
-plot (x,y)
+plot(x,y)
