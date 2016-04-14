@@ -7,14 +7,14 @@ T2 = 120;
 lo = 200;
 
 #Please enter the dilatation coefficient of the objet of your choice. This can be find on the internet if you don't know it.
-alpha = 1.6;
+alpha = 1.6*10^(-6);
 
-title('Longueur finale en fonction de la témparature ')
-xlabel('Température')
-ylabel('Longueur finale')
+
 
 # The graph you'll get takes the temperature in Kelvin degrees on the X axis, and the lenght of your objet on the Y axis. This length is calculated by the function " calculdL".
 x = [T1+273.15:10:T2+273.15];
 y = calculdL(T1,x,lo,alpha);
-
-plot(x,y)
+plot (x,y)
+title("Longueur finale en fonction de la temperature ")
+xlabel('Temperature en kelvin ')
+ylabel('Longueur finale en m')
