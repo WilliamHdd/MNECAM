@@ -2,6 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.backends.backend_pdf import PdfPages
 
+# Redefine the path according to where your file is located.
 file = '/Users/williamdedecker/Desktop/Informatique/MNECAM/data.txt'
 data = np.loadtxt(file)
 
